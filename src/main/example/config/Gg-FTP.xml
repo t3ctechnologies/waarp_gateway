@@ -23,8 +23,8 @@
         <serverhttpsport>8023</serverhttpsport>
     </network>
     <exec>
-    	<retrievecmd>R66PREPARETRANSFER -to hosta -file #FILE# -rule rule2 -info DownloadFile</retrievecmd>
         <storecmd>R66PREPARETRANSFER -to hosta -file #BASEPATH##FILE# -rule rule1 -info SendFile</storecmd>
+		<retrievecmd>R66PREPARETRANSFER -to hosta -file #FILE# -rule rule2 -info DownloadFile</retrievecmd>
     </exec>
     <directory>
         <serverhome>E:\GG\FTP</serverhome>
